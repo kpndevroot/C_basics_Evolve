@@ -3,10 +3,11 @@
 int main()
 {
 
-    int n, reverse = 0, remainder;
+    int n, reverse = 0, remainder, temp;
     // n=12
     printf("Enter an integer: ");
     scanf("%d", &n);
+    temp = n;
 
     while (n != 0)
     {
@@ -19,5 +20,13 @@ int main()
 
     printf("Reversed number = %d", reverse);
 
+    if (temp == reverse)
+    {
+        printf("is palindorme");
+    }
+    else
+    {
+        printf("is not palindorme");
+    }
     return 0;
 }
